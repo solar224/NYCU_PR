@@ -12,3 +12,7 @@ python -m src.main --dataset breast_cancer --models svm knn logreg lda qda mlp r
 two datasets with more classes
 python -m src.main --dataset wine   --models svm knn logreg lda qda mlp rf --cv 5
 python -m src.main --dataset digits --models svm knn logreg lda qda mlp rf --cv 5
+
+
+
+python -m src.experiment --dataset wine --model mlp --scoring f1_macro
