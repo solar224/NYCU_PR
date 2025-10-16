@@ -12,7 +12,7 @@ pr-assignment1/
       mlp.py                 # MLPClassifier (允許)
       rf.py                  # RandomForest (可選)
     evaluate.py              # 混淆矩陣、ROC、AUC、報表
-    experiment.py            # 單一資料集多模型多超參數
+    experiment.py            # 實驗分析 (需要產出圖片)
     main.py                  # 入口：挑資料集→跑實驗→存圖與結果
   reports/
     figures/                 # 圖片輸出：混淆矩陣、ROC、學習曲線
