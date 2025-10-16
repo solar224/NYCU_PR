@@ -1,0 +1,14 @@
+venv
+C:\Users\User\AppData\Local\Programs\Python\Python313\python.exe -m venv venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+pip install -U numpy pandas scikit-learn matplotlib seaborn scipy tqdm torch torchvision
+.\venv\Scripts\Activate.ps1
+
+two two-class datasets
+python -m src.main --dataset pima_openml --models svm knn logreg lda qda mlp rf --cv 5
+python -m src.main --dataset breast_cancer --models svm knn logreg lda qda mlp rf --cv 5
+
+
+two datasets with more classes
+python -m src.main --dataset wine   --models svm knn logreg lda qda mlp rf --cv 5
+python -m src.main --dataset digits --models svm knn logreg lda qda mlp rf --cv 5
