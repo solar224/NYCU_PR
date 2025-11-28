@@ -1,20 +1,22 @@
+```
 pr-assignment1/
-  data/                      # 放本地快取
+  data/                      # 
   src/
-    datasets.py              # 載入/前處理與特徵工程
+    datasets.py              # 載入前處理與特徵工程
     split.py                 # Stratified split + CV
     classifiers/
-      base.py                # 介面定義
+      base.py                # interface define
       knn.py                 # k-NN
       svm.py                 # SVM (linear/RBF)
       logistic.py            # 邏輯迴歸
       lda_qda.py             # LDA/QDA
-      mlp.py                 # MLPClassifier (允許)
-      rf.py                  # RandomForest (可選)
+      mlp.py                 # MLPClassifier 
+      rf.py                  # RandomForest 
     evaluate.py              # 混淆矩陣、ROC、AUC、報表
-    experiment.py            # 實驗分析 (需要產出圖片)
-    main.py                  # 入口：挑資料集→跑實驗→存圖與結果
+    experiment.py            # 實驗分析
+    main.py                  # 
   reports/
     figures/                 # 圖片輸出：混淆矩陣、ROC、學習曲線
-    tables/                  # 指標彙整 CSV
+    tables/                  # CSV
   README.md
+```
